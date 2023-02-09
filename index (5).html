@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style (4).css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="column">
+            <!-- Форма -->
+            <form action="" class="form" id="myForm">
+                <div class="form__row">
+                    <input type="text" class="input" name="str">
+                </div>
+                <div class="form__row">
+                    <button class="btn" name="addText" id="addText">Добавить текст</button>
+                </div>
+                <div class="form__row">
+                    <button class="btn" name="sum" id="sum">Сумма чисел</button>
+                </div>
+                <div class="form__row">
+                    <button class="btn" name="quest" id="quest">Заполнить анкету</button>
+                </div>
+                <div class="form__row">
+                    <button class="btn" name="count" id="count">Количество слов</button>
+                </div>
+            </form>
+            <!-- Блоки для вывода результатов -->
+            <div class="content">
+                <h2 class="title">Текст</h2>
+                <div class="block" id="text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt temporibus facere voluptates,
+                    dolorem
+                    officiis laboriosam, inventore dolore tempore, quo fugiat optio provident! Placeat enim similique,
+                    tempora cupiditate aspernatur aut amet.
+                </div>
+                <h2 class="title" id="countSum">Сумма чисел:</h2>
+                <div class="block" id="sumOutput"></div>
+            </div>
+            <div class="content">
+                <h2 class="title">Анкета</h2>
+                <div class="quest__row" id="surname">Фамилия: </div>
+                <div class="quest__row" id="name">Имя: </div>
+                <div class="quest__row" id="secondName">Отчество: </div>
+            </div>
+            <div class="content">
+                <h2 class="title">Количество слов в тексте:</h2>
+                <div class="count__value" id="countValue"></div>
+            </div>
+        </div>
+        <div class="column">
+        </div>
+        <!-- Задания -->
+        <div class="column">
+            <div class="content quizzis">
+                <h1 class="title">Задания</h1>
+                <div class="quizz">
+                    <ol class="quizz__list">
+                        <li class="quizz__item">
+                            Дан инпут и абзац. При клике на кнопку запишите значение инпута в конец текста абзаца.
+                        </li>
+                        <li class="quizz__item">
+                            Дан инпут. В него вводится число. При клике на кнопку найдите сумму цифр этого числа.
+                        </li>
+                        <li class="quizz__item">
+                            В инпут вводится ФИО через пробел. При клике на кнопку запишите фамилию, имя и отчество в
+                            анкету.
+                        </li>
+                        <li class="quizz__item">
+                            Дан инпут. В него вводится текст. При клике на кнопку узнайте количество слов в этом тексте.
+                        </li>
+                        <li class="quizz__item">
+                            Дан инпут. В него вводится ФИО через пробел. ФИО вводится с маленькой буквы. Сделайте так,
+                            чтобы по потери фокуса инпутом, введенные фамилия, имя и отчество автоматически стали
+                            записанными с большой буквы (в этом же инпуте).
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
